@@ -18,7 +18,8 @@ from modules.upscaler import Upscaler, UpscalerData
 from scripts.roop_logging import logger
 
 #providers = onnxruntime.get_available_providers()
-providers = ["CPUExecutionProvider"]
+#providers = ["CPUExecutionProvider"]
+providers = ["CUDAExecutionProvider"]
 
 @dataclass
 class UpscaleOptions:
